@@ -10,7 +10,7 @@ author_profile: true
 {% assign grouped_notes = site.infra_study | group_by: "chapter" | sort: "name" %}
 
 {% for chapter in grouped_notes %}
-  ### {{ chapter.name }}
+  <h3>{{ chapter.name }}</h3>
   <ul>
     {% assign sorted_items = chapter.items | sort: "order" %}
     {% for item in sorted_items %}
