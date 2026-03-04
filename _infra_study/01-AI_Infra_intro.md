@@ -9,7 +9,7 @@ order: 1
 
 这时候，**AI Infrastructure（AI基础设施，简称 AI Infra）** 就成为了决定模型能否成功训练、以及训练成本高低的核心壁垒。简单来说，AI Infra 是连接底层算力硬件与上层 AI 应用的“系统级桥梁”，它的终极目标是：**在有限的硬件资源下，打破“内存墙”与“通信墙”，追求极致的计算效率（MFU）和最低的系统延迟。**
 
-![AI Infra 四层架构图](/files/infra-1/infra_Architecture.png)
+![AI Infra 四层架构图](/files/infra-1/infra_architecture.png)
 
 结合上面的架构图，一个完整的 AI Infra 技术栈自底向上通常包含以下四个核心层级：
 
