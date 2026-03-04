@@ -5,7 +5,7 @@ permalink: /infra-study/
 author_profile: true
 ---
 
-欢迎来到我的 AI 基础设施学习笔记。
+欢迎来到我的 AI Infra 学习笔记。
 
 {% assign grouped_notes = site.infra_study | group_by: "chapter" | sort: "name" %}
 
