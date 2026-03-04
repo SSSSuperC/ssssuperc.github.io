@@ -21,7 +21,7 @@ main:
   #   url: /portfolio/
         
   - title: "Infra Study"
-    url: /year-archive/
+    url: /infra-study/
     
   - title: "CV"
     url: /cv/
