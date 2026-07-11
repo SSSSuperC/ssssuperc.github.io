@@ -31,3 +31,10 @@ main:
     
   # - title: "Guide"
   #   url: /markdown/
+
+main_zh:
+  - title: "AI Infra 笔记"
+    url: /infra-study/
+
+  - title: "简历"
+    url: /cn/cv/

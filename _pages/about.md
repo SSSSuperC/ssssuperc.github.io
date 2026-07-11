@@ -2,39 +2,39 @@
 permalink: /
 title: "Yanxin Chen - Home"
 author_profile: true
-redirect_from: 
+lang: en
+lang_alternate: /cn/
+redirect_from:
   - /about/
   - /about.html
 ---
 
-Welcome to my corner of the internet. 
+Welcome to my personal homepage.
 
-I am **Yanxin Chen (陈衍鑫)**. I am currently pursuing my Ph.D. in Artificial Intelligence at **Fudan University**. 
+I am **Yanxin Chen (陈衍鑫)**, an incoming Ph.D. student in Artificial Intelligence at **Fudan University**, starting in September 2026.
 
-This page is a brief window into who I am, what I build, and the technical rabbit holes I frequently fall into.
+This site records my research interests, engineering experience, and the technical problems I keep working on across large models and multimodal systems.
 
-### The Architect and The Mechanic
+### Research Meets Engineering
 
-My primary interests lie in the chaotic yet beautiful world of Large Language Models and Multimodal Learning. 
+My main interests are large language models, multimodal learning, and long video understanding, with a focus on efficient modeling, stable training, and scalable systems for video large models.
 
-Unlike researchers who focus only on math proofs and theory, I am an engineer at heart. I believe a great idea is only as good as the code that runs it. 
+I care about whether an idea can actually be trained, deployed, and made reliable in a large-scale system. Model architecture, training frameworks, parallel strategies, and low-level kernels are different layers of the same problem.
 
-I spend my days designing algorithms on a whiteboard, and my nights diving into the infrastructure. I know my way around the dark arts of `Megatron-LM` and `TransformerEngine`. Having had the fun (and occasional panic) of running training jobs across a massive 1,000+ H200 GPU cluster, I know what it really takes to scale. 
+I work with `Megatron-LM`, `TransformerEngine`, hybrid parallel training, activation recomputation, and FlashAttention-related optimization. I also have experience training on thousand-GPU clusters. When communication bottlenecks, memory pressure, deadlocks, or data issues appear, I prefer tracing the full system path instead of only looking at isolated error messages.
 
-I genuinely enjoy fixing communication bottlenecks, resolving weird deadlocks, and pushing a massive compute cluster to its absolute limits—preferably without setting the data center on fire.
+### Experience
 
-### Where I've Been
+Before starting my Ph.D., I worked with research teams at the CityU AML Lab and the Fudan NLP Group on multimodal learning, long video understanding, retrieval-augmented generation, and video large model training infrastructure.
 
-Before my Ph.D., I spent a great time working with brilliant minds as a research assistant at the CityU AML Lab and the Fudan NLP Group. 
+These experiences helped me understand the full lifecycle of a research idea: problem formulation, method design, engineering implementation, and large-scale training validation. For VLMs and long-video tasks, research ability and engineering ability are tightly coupled, because many important issues only become visible in real training systems.
 
-These experiences taught me the full lifecycle of a research idea: from a sudden spark of inspiration, to hard engineering work, and finally a working system. More importantly, they taught me how to stay calm when a multi-billion parameter model simply refuses to converge on a thousand GPUs.
+### Current Focus
 
-### Beyond the Code
+I currently focus on three directions: deep semantic retrieval for long video understanding, VLM architecture design for streaming video inference, and efficient, stable training for large-scale video models.
 
-I am a practical problem-solver. I love working in a team, mostly because debugging a large-scale distributed system alone will drive you crazy. I enjoy helping teammates fix weird environment bugs, and I am always trying to make the messy process of model training a bit easier for everyone.
+I am also organizing AI Infra study notes, aiming to turn experience in distributed training, kernel optimization, and model architecture modification into reusable knowledge.
 
-### Let's Connect
+### Contact
 
-I am always up for a good chat about AI, systems, or just sharing sad stories about Out-Of-Memory errors. 
-
-Feel free to reach out via email or explore some of my code on[GitHub](https://github.com/SSSSuperC).
+Feel free to reach out by email or explore my code and projects on [GitHub](https://github.com/SSSSuperC).

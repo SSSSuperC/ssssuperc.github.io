@@ -1,14 +1,41 @@
 {% include base_path %}
+{% assign current_lang = page.lang | default: "en" %}
+{% assign home_url = "/" %}
+{% assign home_title = site.title %}
+{% assign nav_links = site.data.navigation.main %}
+{% if current_lang == "zh" %}
+  {% assign home_url = "/cn/" %}
+  {% assign home_title = "陈衍鑫 / 个人主页" %}
+  {% if site.data.navigation.main_zh %}
+    {% assign nav_links = site.data.navigation.main_zh %}
+  {% endif %}
+{% endif %}
+{% assign home_selected = false %}
+{% if page.url == home_url %}
+  {% assign home_selected = true %}
+{% endif %}
+{% if current_lang != "zh" and page.url == "/index.html" %}
+  {% assign home_selected = true %}
+{% endif %}
+{% assign alternate_url = page.lang_alternate %}
+{% if alternate_url == nil or alternate_url == "" %}
+  {% if current_lang == "zh" %}
+    {% assign alternate_url = "/" %}
+  {% else %}
+    {% assign alternate_url = "/cn/" %}
+  {% endif %}
+{% endif %}
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><span class="navicon"></span></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-            <a href="{{ base_path }}/">{{ site.title }}</a>
+          <li class="masthead__menu-item masthead__menu-item--lg persist {% if home_selected %}selected{% endif %}">
+            <a href="{{ home_url | relative_url }}">{{ home_title }}</a>
           </li>
-          {% for link in site.data.navigation.main %}
+          {% for link in nav_links %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
@@ -18,8 +45,15 @@
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          <li class="masthead__menu-item masthead__menu-actions persist tail">
+            <span class="masthead__menu-actions-inner">
+              <a class="language-switch" href="{{ alternate_url | relative_url }}" aria-label="{% if current_lang == 'zh' %}Switch to English{% else %}切换到中文{% endif %}">
+                <span class="language-switch__option {% if current_lang == 'zh' %}is-active{% endif %}">CN</span>
+                <span class="language-switch__separator">/</span>
+                <span class="language-switch__option {% if current_lang != 'zh' %}is-active{% endif %}">EN</span>
+              </a>
+              <a id="theme-toggle" class="theme-toggle" role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+            </span>
           </li>
         </ul>
         <ul class="hidden-links hidden"></ul>

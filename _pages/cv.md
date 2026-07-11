@@ -3,6 +3,8 @@ layout: archive
 title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
+lang: en
+lang_alternate: /cn/cv/
 redirect_from:
   - /resume
 ---
@@ -10,44 +12,43 @@ redirect_from:
 {% include base_path %}
 
 ## 📥 Downloads
-[📄 Download CV (English Version)](/files/CV_Yanxin_EN.pdf) | [📄 下载个人简历 (中文版)](/files/CV_Yanxin_CN.pdf)
+[📄 Download latest profile / CV](/files/CV_Yanxin_CN.pdf)
 
 ---
 
 ## Education
-* **Ph.D. in Artificial Intelligence**, Fudan University, *Expected*
-* **M.S. in Data Science**, City University of Hong Kong, *2024.09 - 2025.10*
-  * **GPA: 3.76 / 4.0**
-* **B.S. in Software Engineering**, Northwest University, *2020.09 - 2024.06*
-  * **GPA: 3.35 / 4.0 (Top 20%)**
+* **Incoming Ph.D. Student in Artificial Intelligence**, Fudan University, *Starting 2026.09*
 
-## Research & Work Experience
-* **Research Intern** | NLP Group, Fudan University
-  * *Focus: Video Large Models (VLM) & Training Infrastructure*
-  * **VLM Architecture Exploration:** Designed cross-attention-based image-text interaction mechanisms, significantly reducing FLOPs and memory overhead compared to traditional full self-attention layers.
-  * **Training Infra Optimization:** Optimized large-scale training using **Megatron-LM** and **Transformer Engine**. Configured 3D parallelism (TP/PP/DP) and activation checkpointing, enabling end-to-end training for ultra-long video sequences on 1,000+ GPU clusters.
-
-* **Research Assistant** | AML Lab, City University of Hong Kong
-  * *Focus: Multimodal Learning & Retrieval-Augmented Generation (RAG)*
-  * **Recommender Systems:** Explored **Mixture of Experts (MoE)** for multimodal data fusion, optimizing expert routing to balance load and improve recommendation accuracy.
-  * **PN-RAG Framework:** Developed content-aware retrieval strategies to address context window limitations in long-video semantic understanding, enhancing the coherence of LLM-generated responses.
+## Research Focus
+* **Long Video Understanding:** Retrieval-augmented generation for long-video semantic understanding, with an emphasis on moving beyond shallow text similarity toward structured, multi-modal reasoning.
+* **Video Large Models (VLMs):** Architecture design for efficient image-text interaction, streaming video inference, and long-context video modeling.
+* **Training Infrastructure:** Large-scale distributed VLM training, parallel strategy design, activation recomputation, FlashAttention optimization, and cluster-level debugging.
 
 ## Publications
-* **Beyond Shallow Retrieval: Probe-then-Note in Retrieval-Augmented Generation for Long Video Understanding**
-  * *Co-first Author* | EMNLP 2025 (Under Review)
-  * Introduced the PN-RAG framework to extract hierarchical structures in dense video content for deeper semantic grounding.
+* **ProEchoMem: Enhancing Long Video Understanding via Multi-Trace Probe-Echo Memory**
+  * *Co-first Author* | SIGIR 2026
+  * Proposed the **PN-RAG** framework to reveal implicit knowledge connections in long videos through probe generation, structured annotation, and fine-grained reranking.
 
-* **Mixture of Experts for Cross-Modal Feature Fusion in Sequential Recommendation Systems**
-  * *Co-second Author* | KDD 2026 (Under Review)
-  * Proposed **MoFuRec**, a three-stage fusion strategy using sparse top-k selection to optimize computational costs and expert diversity.
+## Projects & Engineering Experience
+* **VLM Architecture Exploration**
+  * Designed cross-attention-based image-text interaction modules to reduce the computational load of full self-attention in video models.
+  * Added `cross_gate` mechanisms to improve training stability for cross-modal interaction.
+
+* **Training Infrastructure Optimization**
+  * Adapted Megatron-style parallel strategies and activation recomputation for cross-attention VLM training.
+  * Modified FlashAttention-3 support for `cross_attention_mask`, improving training efficiency and reducing memory pressure for long-video inputs.
+
+* **Large-Scale MOSS-VL Training**
+  * Core contributor to **MOSS-VL**, released in April.
+  * Responsible for the four-stage pretraining process and the full SFT workflow, including ablation experiments and formal training runs.
+  * Experienced with thousand-GPU cluster training and debugging training-framework, data, NCCL communication, and deadlock issues.
 
 ## Skills
-* **AI Algorithms:** Large Language Models (LLMs), Multimodal Learning (VLM), RAG, Recommender Systems, Mixture of Experts (MoE).
-* **Training Infrastructure:** Distributed Training on large-scale clusters (**1,000+ H200/H100 GPUs**), `Megatron-LM`, `TransformerEngine`, `DeepSpeed`, `FlashAttention`.
-* **Engineering:** Python, C++ (STL), PyTorch, Linux/Bash, Cluster Debugging (NCCL communication bottlenecks, deadlock resolution).
+* **AI Algorithms:** Large Language Models (LLMs), Video Large Models (VLMs), Long Video Understanding, RAG, SFT/RL Post-training, Linear Attention.
+* **Training Infrastructure:** Large-scale distributed training, `Megatron-LM`, `TransformerEngine`, `DeepSpeed`, `FlashAttention`/`FlashAttention-3`, TP/PP/DP parallelism, activation recomputation.
+* **Engineering:** Python, C++ (STL), PyTorch, Linux/Bash, cluster debugging, NCCL communication bottlenecks, deadlock resolution.
 
-## Awards & Honors
-* **Outstanding Performance Award**, City University of Hong Kong, *2025*
-* **Best Project Award**, City University of Hong Kong, *2025*
-* **First-Class University Scholarship** (Twice), Northwest University, *2022, 2023*
-* **ACM-ICPC University Contest Second Prize**, Northwest University, *2021*
+## Future Research Directions
+* **Efficient VLM Training:** Further explore hybrid parallelism and activation recomputation to extend the trainable context length and frame limit of long-video VLMs.
+* **VLM Post-training:** Study SFT and RL training for long-video tasks, with a focus on better alignment with practical user needs.
+* **Model Architecture:** Explore low-precision training and hybrid architectures that combine linear attention with existing VLM backbones.

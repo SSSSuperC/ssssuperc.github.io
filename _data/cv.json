@@ -1,152 +1,109 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "CHEN Yanxin",
+    "label": "Incoming Ph.D. Student in Artificial Intelligence",
+    "email": "yanxinchen26@m.fudan.edu.cn",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://ssssuperc.github.io",
+    "summary": "Incoming Ph.D. student in Artificial Intelligence at Fudan University, focusing on long video understanding, video large models, retrieval-augmented generation, and large-scale VLM training infrastructure.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "Shanghai",
+      "countryCode": "China",
       "region": ""
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "SSSSuperC",
+        "url": "https://github.com/SSSSuperC"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "MOSS-VL",
+      "position": "Core Contributor",
+      "startDate": "2026",
+      "endDate": "",
+      "summary": "Large-scale VLM pretraining and SFT workflow.",
+      "highlights": [
+        "Responsible for four-stage pretraining and the full SFT workflow, including ablation experiments and formal training runs.",
+        "Experienced with thousand-GPU cluster training and debugging training-framework, data, NCCL communication, and deadlock issues."
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "institution": "Fudan University",
+      "area": "Ph.D. in Artificial Intelligence",
+      "studyType": "Ph.D.",
+      "startDate": "2026.09",
+      "endDate": "Starting 2026.09",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "AI Algorithms",
+      "keywords": [
+        "Large Language Models",
+        "Video Large Models",
+        "Long Video Understanding",
+        "RAG",
+        "SFT/RL Post-training",
+        "Linear Attention"
+      ]
+    },
+    {
+      "name": "Training Infrastructure",
+      "keywords": [
+        "Megatron-LM",
+        "TransformerEngine",
+        "DeepSpeed",
+        "FlashAttention",
+        "FlashAttention-3",
+        "TP/PP/DP Parallelism",
+        "Activation Recomputation"
+      ]
+    },
+    {
+      "name": "Engineering",
+      "keywords": [
+        "Python",
+        "C++",
+        "PyTorch",
+        "Linux/Bash",
+        "NCCL Debugging",
+        "Cluster Debugging"
+      ]
+    }
+  ],
   "languages": [],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Research",
+      "keywords": [
+        "Efficient VLM Training",
+        "Long-context Video Modeling",
+        "VLM Post-training",
+        "Low-precision Training"
+      ]
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "ProEchoMem: Enhancing Long Video Understanding via Multi-Trace Probe-Echo Memory",
+      "publisher": "SIGIR 2026",
+      "releaseDate": "2026",
+      "website": "",
+      "summary": "Co-first author. Proposed the PN-RAG framework for probe generation, structured annotation, and fine-grained reranking in long-video understanding."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }
