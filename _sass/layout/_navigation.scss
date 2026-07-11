@@ -225,46 +225,13 @@
       }
     }
 
-    .masthead__menu-actions-inner {
-      display: flex;
-      align-items: center;
-      gap: 0.65rem;
-      white-space: nowrap;
-    }
-
-    .masthead__menu-actions {
+    #theme-toggle {
       a {
-        margin: 0;
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
       }
-    }
-
-    .language-switch {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.15rem;
-      font-size: $type-size-6;
-      font-weight: 600;
-      letter-spacing: 0;
-
-      .language-switch__option {
-        color: var(--global-text-color-light);
-      }
-
-      .language-switch__option.is-active {
-        color: var(--global-text-color);
-        font-weight: 700;
-      }
-
-      .language-switch__separator {
-        color: var(--global-border-color);
-      }
-    }
-
-    .theme-toggle {
-      width: 25px;
-      display: flex;
-      justify-content: center;
-      cursor: pointer;
     }
 
     a {

@@ -10,7 +10,7 @@ lang_alternate: /cv/
 {% include base_path %}
 
 ## 📥 下载
-[📄 下载最新个人介绍 / CV](/files/CV_Yanxin_CN.pdf)
+[📄 下载英文简历](/files/CV_Yanxin_EN.pdf) | [📄 下载中文简历](/files/CV_Yanxin_CN.pdf)
 
 ---
 

@@ -12,7 +12,7 @@ redirect_from:
 {% include base_path %}
 
 ## 📥 Downloads
-[📄 Download latest profile / CV](/files/CV_Yanxin_CN.pdf)
+[📄 Download CV (English)](/files/CV_Yanxin_EN.pdf) | [📄 Download CV (Chinese)](/files/CV_Yanxin_CN.pdf)
 
 ---
 
