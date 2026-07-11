@@ -11,7 +11,7 @@ redirect_from:
 
 Welcome to my personal homepage.
 
-I am **Yanxin Chen (陈衍鑫)**, an incoming Ph.D. student in Artificial Intelligence at **Fudan University**, starting in September 2026.
+I am **Yanxin Chen (陈衍鑫)**, a Ph.D. student in Artificial Intelligence at **Fudan University**.
 
 This site records my research interests, engineering experience, and the technical problems I keep working on across large models and multimodal systems.
 
@@ -25,7 +25,7 @@ I work with `Megatron-LM`, `TransformerEngine`, hybrid parallel training, activa
 
 ### Experience
 
-Before starting my Ph.D., I worked with research teams at the CityU AML Lab and the Fudan NLP Group on multimodal learning, long video understanding, retrieval-augmented generation, and video large model training infrastructure.
+Before my Ph.D., I worked with research teams at the CityU AML Lab and the Fudan NLP Group on multimodal learning, long video understanding, retrieval-augmented generation, and video large model training infrastructure.
 
 These experiences helped me understand the full lifecycle of a research idea: problem formulation, method design, engineering implementation, and large-scale training validation. For VLMs and long-video tasks, research ability and engineering ability are tightly coupled, because many important issues only become visible in real training systems.
 

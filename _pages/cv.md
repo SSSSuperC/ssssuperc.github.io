@@ -17,7 +17,7 @@ redirect_from:
 ---
 
 ## Education
-* **Incoming Ph.D. Student in Artificial Intelligence**, Fudan University, *Starting 2026.09*
+* **Ph.D. Student in Artificial Intelligence**, Fudan University
 
 ## Research Focus
 * **Long Video Understanding:** Retrieval-augmented generation for long-video semantic understanding, with an emphasis on moving beyond shallow text similarity toward structured, multi-modal reasoning.

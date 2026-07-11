@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "CHEN Yanxin",
-    "label": "Incoming Ph.D. Student in Artificial Intelligence",
+    "label": "Ph.D. Student in Artificial Intelligence",
     "email": "yanxinchen26@m.fudan.edu.cn",
     "phone": "",
     "website": "https://ssssuperc.github.io",
-    "summary": "Incoming Ph.D. student in Artificial Intelligence at Fudan University, focusing on long video understanding, video large models, retrieval-augmented generation, and large-scale VLM training infrastructure.",
+    "summary": "Ph.D. student in Artificial Intelligence at Fudan University, focusing on long video understanding, video large models, retrieval-augmented generation, and large-scale VLM training infrastructure.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -40,7 +40,7 @@
       "area": "Ph.D. in Artificial Intelligence",
       "studyType": "Ph.D.",
       "startDate": "2026.09",
-      "endDate": "Starting 2026.09",
+      "endDate": "Present",
       "gpa": null,
       "courses": []
     }
